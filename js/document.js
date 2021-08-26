@@ -16,16 +16,18 @@ function onsub(){
         return false;
 
     }
+
 }
 function errvalid(){
     if(fullName.value != ""){
         fullNameError.innerHTML = "";
+        fullName.style.border = "1px solid #c8c5c5";
         return false;
 
     }
     
 }
-fullName.addEventListener("blur",errvalid);
+fullName.addEventListener("keyup",errvalid);
 fullName.addEventListener("focus", function(){
     fullNameLab.style.top = "13px";
 })
@@ -33,6 +35,17 @@ fullName.addEventListener("blur", function(){
     if(fullName.value == ""){
         fullNameLab.style.top = "31px"
     }
+})
+email.addEventListener('focus',function(){
+    if(email.focus){
+        emailLab.style.top = "13px";
+    }
+})
+email.addEventListener('blur', function(){
+    if(email.value == ""){
+        emailLab.style.top = "31px"
+    }
+
 })
 function myFun(){
     document.getElementsByClassName("content")[0].style.visibility = "visible";    
