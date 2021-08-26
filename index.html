@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--- main div start-->
+    <div id="main">
+        <h2>From Creative It Institute Website</h2>
+        <div class="content">
+            <div class="form-container">
+                <button id="close-botton" onclick="myFunOne();">
+                    <span><img src="imges/__geKiQnSG-.png" alt="close"></span>
+                </button>
+                <p>Please fill out the form below and we will get back to you as soon as possible.</p>
+            </div>
+            <div class="form-item">
+                <form action="" onsubmit="return onsub();">
+                <div class="input-grop">
+                    <label for="query" class="query">query type</label>
+                    <select>
+                        <option>complane(offline)</option>
+                        <script>
+                            var option = ["genral query(offline)",]
+                            var optionL = option.length;
+                            var totalOption = optionL -1;
+                            for(i = 0; i <= totalOption;i++){
+                                document.write("<option>" + option[i] + "</option>")
+                            }
+                        </script>
+                    </select>
+                </div>
+                <div class="input-grop">
+                    <label for="query" id="fullNameLab">*full name</label>
+                    <input type="text" placeholder="fast name" id="fullName">
+                    <small id="fullNameError"></small>
+                </div>
+                <div class="input-grop">
+                    <label for="query" id="emailLab">*email</label>
+                    <input type="email" placeholder="fast name" id="email">
+                </div>
+                <div class="input-grop">
+                    <label for="query">*phone</label>
+                    <input type="phone" placeholder="fast name" id="phone">
+                </div>
+                <div class="input-grop">
+                    <label for="query" >*Batch no(it is)</label>
+                    <input type="text" placeholder="fast name" id="batchNo">
+                </div>
+                <div class="input-grop">
+                    <label for="query">*id no(it is)</label>
+                    <input type="text" placeholder="fast name" id="idNo">
+                </div>
+                <div class="input-grop">
+                    <label for="query">*your messges</label>
+                    <textarea id="messges">
+
+                    </textarea>
+                </div>
+                <div class="input-grop">
+                    <button type="submit" onsubmit="return onsub();" class="btn">Submit</button>
+                </div>
+            </form>        
+            </div>
+        </div>
+        <button id="btn" onclick="myFun();">help center</button>
+    </div>
+    <!--- main div end-->
+    <script src="js/document.js"></script>
+</body>
+</html>
